@@ -1,11 +1,12 @@
-CREATE burger_db;
-USE burger_db;
+DROP DATABASE burgers_db;
+CREATE DATABASE burgers_db;
+USE burgers_db;
 
 
-CREATE TABLE 'burgers' (
+CREATE TABLE burgers (
     id INT (11) AUTO_INCREMENT NOT NULL,
- burger VARCHAR (255) NOT NULL,
+ burgerName VARCHAR (255) NOT NULL,
  isDevoured BIT NOT NULL, 
     PRIMARY KEY (id)
 )
-INSERT INTO burger_db(burgerName, IsDevoured)
+
