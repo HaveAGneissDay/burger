@@ -16,10 +16,6 @@ var connection = mysql.createConnection({
     database: "burgers_DB"
 });
 
-connection.connect(function (err) {
-    if (err) throw err;
-});
-
 
 // Make the connection to MySQL
 connection.connect(function (err) {
