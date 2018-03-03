@@ -19,7 +19,7 @@ var connection = mysql.createConnection({
 connection.connect(function (err) {
     if (err) throw err;
 });
-};
+
 
 // Make the connection to MySQL
 connection.connect(function (err) {
