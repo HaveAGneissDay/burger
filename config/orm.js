@@ -88,11 +88,14 @@ var orm = {
     },
 
     deleteOne: function (table, condition, cb) {
+         // Construct the query string that deletes a single entry in the target table
         var queryString = 'DELETE FROM ' + table;
         queryString += ' WHERE ';
         queryString += condition;
+        // Perform the database query
          connection.query(queryString, function (err, result) {
              if (err) throw err;
+             //return results in a callback
              cb(result);
          });
     }
