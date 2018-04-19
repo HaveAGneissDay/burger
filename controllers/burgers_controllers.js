@@ -50,4 +50,4 @@ router.delete('/burgers/update/:id', function (req, res) {
 });
 
 // Export routes for server.js to use.
-module.exports = routers;
+module.exports = router;
